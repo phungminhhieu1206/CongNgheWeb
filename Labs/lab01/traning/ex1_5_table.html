@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table</title>
+</head>
+
+<body>
+    <table border="1">
+        <tr>
+            <td>row 1, cell 1</td>
+            <td>row 1, cell 2</td>
+        </tr>
+        <tr>
+            <td>row 2, cell 1</td>
+            <td>row 2, cell 2</td>
+        </tr>
+    </table>
+
+    <br><br><br>
+
+    <table border="1">
+        <tr>
+            <th>Heading</th>
+            <th>Another Heading</th>
+        </tr>
+        <tr>
+            <td>row 1, cell 1</td>
+            <td>row 1, cell 2</td>
+        </tr>
+        <tr>
+            <td>row 2, cell 1</td>
+            <td>row 2, cell 2</td>
+        </tr>
+    </table>
+
+    <br><br><br>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <td>Stt</td>
+                <td>Họ tên</td>
+                <td>Email</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Phùng Minh Hiếu</td>
+                <td>phungminhhieu1206@gmail.com</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Đinh Tùng Dương</td>
+                <td>dedontre@gmail.com</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Ngô Bá Khá</td>
+                <td>khaquanhi@gmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><br><br>
+
+    <table border="2">
+        <thead>
+            <tr>
+                <td>Mã sản phẩm</td>
+                <td>Tên sản phẩm</td>
+                <td>Giá</td>
+                <td>Số lượng</td>
+                <td>Thành tiền</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Ladico#1</td>
+                <td>Áo len Hàn Quốc</td>
+                <td>500.000đ</td>
+                <td>1</td>
+                <td>500.000đ</td>
+            </tr>
+            <tr>
+                <!-- <td>Ladico#2</td> -->
+                <td>Áo tắm Hàn Quốc</td>
+                <td>300.000đ</td>
+                <td>2</td>
+                <td>600.000đ</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td align="center" colspan="4">Tổng</td>
+                <td>1.100.000đ</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <br><br><br>
+
+    <!-- empty field in table -->
+    <table border="1">
+        <tr>
+            <td>row 1, cell 1</td>
+            <td>row 1, cell 2</td>
+        </tr>
+        <tr>
+            <td>row 2, cell 1</td>
+            <td></td>
+        </tr>
+    </table>
+
+
+</body>
+
+</html>
