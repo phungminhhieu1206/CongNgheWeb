@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+</head>
+<body>
+    <form action="2-9.php" method="POST">
+        <table>
+          <tr>
+            <td>Your name:</td>
+            <td><input type="text" name="name" style="width:320px"/></td>
+          </tr>
+          <tr>
+            <td >Your class:</td>
+            <td><input type="text" name="class" style="width:320px"/></td>
+          </tr>
+          <tr>
+            <td>Your university:</td>
+            <td><input type="text" name="uni" style="width:320px"/></td>
+          </tr>
+          <tr>
+            <td>Your gender:</td>
+            <td>
+              <input type="radio" name="gender" value="male"/>male
+              <input type="radio" name="gender" value="female"/>female
+            </td>
+          </tr>
+          <tr>
+            <td>Your Country:</td>
+            <td>
+              <select name="country" style="width:320px">
+                <option value="viet nam">Việt Nam</option>
+                <option value="campuchia">Campuchia</option>
+                <option value="ukraina">Ukraina</option>
+                <option value="pakistan">Pakistan</option>
+                <option value="other">Other</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+                Hobbies:<br>
+                <input type="checkbox" name="hb[]" value="badminton"/>badminton
+                <input type="checkbox" name="hb[]" value="video game"/>video game 
+                <input type="checkbox" name="hb[]" value="soccer"/>soccer <br>
+                <input type="checkbox" name="hb[]" value="fishing"/>fishing
+                <input type="checkbox" name="hb[]" value="skiing"/>skiing
+                <input type="checkbox" name="hb[]" value="sailing"/>sailing
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input type="submit" name="submit" value="register"/>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </form>
+</body>
+</html>
