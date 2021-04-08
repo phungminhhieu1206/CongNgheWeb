@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ví dụ 4 - Set controls'attributes</title>
+
+    <script type="text/javascript">
+
+        function setAlign(align) {
+            var pTag = window.document.getElementById("paragraph");
+            pTag.setAttribute("align", align);
+        }
+    </script>
+</head>
+<body>
+    
+    <form name="alignForm">
+        <select name="" id="alignSelect">
+            <option value="left">left</option>
+            <option value="right">right</option>
+            <option value="center">center</option>
+        </select>
+        <input type="button" value="Go" onclick="setAlign(document.alignForm.alignSelect.value)">
+    </form>
+
+    <p id="paragraph">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, quia quod ipsam placeat labore amet et quae nobis recusandae sapiente pariatur fugit vel praesentium sint, eos aliquam voluptatem eligendi esse?
+    </p>
+
+</body>
+</html>

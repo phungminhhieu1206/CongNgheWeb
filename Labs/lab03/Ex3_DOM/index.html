@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<!-- Lưu ý: Chạy bằng apache trong xampp để xem nhé  -->
+<head>
+    <title>Index</title>
+    <script>
+
+    </script>
+</head>
+
+<body>
+    <iframe src="left.html" frameborder="0" id="left"></iframe>
+    <iframe src="right.html" frameborder="0" id="right"></iframe>
+</body>
+<script>
+    parent.left.onload = function () {
+        let left = parent.left.contentDocument
+        left.getElementById('blog').innerHTML = document.cookie
+    }
+
+    parent.right.onload = function () {
+        let right = parent.right.contentDocument
+        right.getElementById('button').onclick = addBlog
+    }
+
+
+    function addBlog() {
+        let cookie = parent.right.contentDocument.getElementById('blog').value
+        let expires = new Date();
+        expires.setDate(expires.getDate() + 1);
+        document.cookie = `${cookie}; expires = ${expires}`
+        location.reload();
+    }
+</script>
+
+</html>
