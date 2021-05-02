@@ -1,0 +1,23 @@
+span {
+    float: left;
+    font-family: Segoe UI;
+    font-size: 75Pt;
+}
+P {
+    margin-toP: 5Px;
+}
+P.rhead {
+    text-align: center;
+    margin-right: 0.5in;
+    font-family: Segoe ui;
+}
+P.lhead {
+    font-family: segoe ui;
+}
+P.body {
+    text-align: center;
+}
+P.foot {
+    margin-left: 60%;
+    line-height: 300%;
+}
