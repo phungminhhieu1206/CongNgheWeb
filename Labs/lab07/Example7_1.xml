@@ -1,0 +1,15 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<!--Create your own XML document for Student information -->
+<student>
+    <name>Pham Van Hanh</name>
+    <ID>20183525</ID>
+    <email> hanh.pv183525@sis.hust.edu.vn </email>
+    <phone> 09835768888 </phone>
+    <birthday>06/07/2000</birthday>
+    <address>Hoang Mai, Ha Noi</address>
+    <school>Hanoi University of Science and Technology</school>
+    <major>Computer Science</major>
+    <class>IT1-02</class>
+    <level>3nd-student</level>
+    <cpa>4.0</cpa>
+</student>
